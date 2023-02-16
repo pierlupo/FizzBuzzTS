@@ -11,3 +11,73 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+h1{
+  color:white;
+  text-align: left;
+  font-weight: 300;
+  font-size: 50px;
+  margin-top: 0;
+}
+
+.conteneur{
+  margin-top: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: 35rem;
+  background-color: rgba(0, 0, 0, 0.863);
+  border-radius: 0.3rem;
+  padding:1rem;
+}
+
+.compteur_conteneur{
+margin-left: auto;
+margin-right: auto;
+height:250px;
+width:250px;
+border-radius: 100%;
+background-color: aqua;
+color:rgba(0, 0, 0, 0.863);
+padding:1rem;
+display: flex;
+justify-content: center;
+align-content: center;
+align-items: center;
+font-size: 70px;
+}
+
+.btnmoins{
+  cursor: pointer;
+  border:none;
+  z-index: 100;
+  height:90px;
+  width:90px;
+  border-radius: 100%;
+  background-color: blue;
+  color:white;
+  font-size: 40px;
+  opacity: .6;
+  position: relative;
+  top: 90px;
+  right: 80px;
+}
+
+.btnplus{
+  cursor: pointer;
+  border:none;
+  z-index: 100;
+  height:90px;
+  width:90px;
+  border-radius: 100%;
+  background-color: rgba(0, 0, 255, 0.904);
+  color:white;
+  font-size: 40px;
+  opacity: .6;
+  position: relative;
+  top: 90px;
+  left: 80px;
+}
+
+.num{
+  position: absolute;
+}
