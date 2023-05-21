@@ -9,7 +9,7 @@ import Compteur1 from './components/Compteur1';
 function App() {
   return (
     <div className="App">
-      <Compteur1></Compteur1>
+      <Compteur1 />
       
     </div>
   );

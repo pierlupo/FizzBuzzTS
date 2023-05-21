@@ -1,3 +1,5 @@
+import classes from './FizzBuzzDisplay.module.css'
+
 const FizzBuzzDisplay = (props: {value:number}) =>{
 
     const getValueAsText = () =>{
@@ -6,8 +8,24 @@ const FizzBuzzDisplay = (props: {value:number}) =>{
         if (props.value % 3 === 0) return 'Fizz';
         return props.value;
     }
+
+    
+  const getDisplayClasses = () => {
+    return `${((props.value % 5 === 0 || props.value % 3 === 0) && props.value !== 0) && classes.fizzBuzz}`
+  }
+  const getDisplayStyles = () => {
+
+    return {
+        fontSize: "4rem",
+        color: props.value % 15 === 0 && props.value !== 0 ? "orange"
+                : props.value % 5 === 0 && props.value !== 0 ? "purple"
+                : props.value % 3 === 0 && props.value !== 0 ? "red"
+                : "black"
+      }
+    }
+    
     return (
-        <span>{getValueAsText()}</span> )
+        <span className={getDisplayClasses()} style={getDisplayStyles()}>{getValueAsText()}</span> )
     
     
 

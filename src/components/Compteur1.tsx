@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react"
+import { useState } from "react";
 import FizzBuzzDisplay from "./FizzzBuzzDisplay";
 
 const Compteur1 = () => {
