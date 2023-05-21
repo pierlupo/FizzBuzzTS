@@ -15,4 +15,4 @@ L'affichage des valeurs du compteurs se feront de façon à ce que la classe et 
 
 ---
 
-![example](./example.png)
+![exemple](./exemple.png)
